@@ -27,7 +27,7 @@ function showEarthquake(earthquake) {
 
   const latitude = earthquake.geometry.coordinates[0]
   const longitude = earthquake.geometry.coordinates[1]
-  const mapUrl = `https://api.maptiler.com/maps/hybrid/?key=GRwZta99FfMcClWPOhTq#6/${longitude}/${latitude}`
+  const mapUrl = `https://api.maptiler.com/maps/hybrid/?key=/${longitude}/${latitude}`
 
   location.innerHTML = "Location: " + earthquake.properties.place
   magnitude.innerHTML = "Magnitude: " + earthquake.properties.mag
